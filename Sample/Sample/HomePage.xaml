@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Sample.Views.HomePage"
+    Title="Samples"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0" x:Name="TopSafeArea" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0" x:Name="BottomSafeArea" />
+        </Grid.RowDefinitions>
+
+
+        <BoxView Grid.RowSpan="4" BackgroundColor="Blue" VerticalOptions="FillAndExpand" />
+
+        <BoxView Grid.Row="0" BackgroundColor="Red" VerticalOptions="FillAndExpand" />
+
+        <Entry Grid.Row="2" Placeholder="Any text" BackgroundColor="Violet" PlaceholderColor="Black" Margin="8"/>
+
+        <BoxView Grid.Row="3" BackgroundColor="Green" VerticalOptions="FillAndExpand" x:Name="KeyboardCompensation" />
+        <BoxView Grid.Row="4" BackgroundColor="Red" VerticalOptions="FillAndExpand" />
+
+    </Grid>
+</ContentPage>
